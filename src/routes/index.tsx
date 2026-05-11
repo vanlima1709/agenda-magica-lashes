@@ -36,7 +36,7 @@ function Index() {
         <div className="relative mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:py-24 lg:grid-cols-2 lg:items-center">
           <div className="text-center lg:text-left">
             <span className="inline-flex items-center gap-2 rounded-full border border-gold/40 bg-background/30 px-4 py-1.5 text-xs font-semibold tracking-widest text-gold backdrop-blur">
-              <Crown className="h-3.5 w-3.5" /> MÉTODO AGENDA LOTADA
+              <Crown className="h-3.5 w-3.5" /> EBOOK MÉTODO AGENDA LOTADA
             </span>
             <h1 className="mt-6 font-display text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
               Cílios Tufos em <span className="text-gradient-gold">7 Dias</span>
