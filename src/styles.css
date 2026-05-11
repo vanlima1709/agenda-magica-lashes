@@ -153,5 +153,33 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-sans);
   }
+}
+
+@layer utilities {
+  .bg-gradient-hero { background-image: var(--gradient-hero); }
+  .bg-gradient-gold { background-image: var(--gradient-gold); }
+  .bg-gradient-purple { background-image: var(--gradient-purple); }
+  .text-gold { color: var(--gold); }
+  .text-lilac { color: var(--lilac); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .shadow-gold { box-shadow: var(--shadow-gold); }
+  .font-display { font-family: var(--font-display); }
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  @keyframes float-glow {
+    0%, 100% { opacity: 0.6; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(-10px); }
+  }
+  .animate-float-glow { animation: float-glow 4s ease-in-out infinite; }
+  @keyframes pulse-gold {
+    0%, 100% { box-shadow: 0 0 0 0 oklch(0.82 0.14 85 / 0.5); }
+    50% { box-shadow: 0 0 0 16px oklch(0.82 0.14 85 / 0); }
+  }
+  .animate-pulse-gold { animation: pulse-gold 2.2s ease-out infinite; }
 }
