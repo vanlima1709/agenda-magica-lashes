@@ -1,12 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
 import { Check, Sparkles, Heart, MessageCircle, Calendar, Gift, Clock, Zap, Crown, Star } from "lucide-react";
 import heroImg from "@/assets/hero-lashes.jpg";
 
 const CHECKOUT = "https://pay.kiwify.com.br/1ecCbat";
-
-export const Route = createFileRoute("/")({
-  component: Index,
-});
 
 function CTA({ children = "QUERO MINHA AGENDA LOTADA", className = "" }: { children?: React.ReactNode; className?: string }) {
   return (
@@ -24,7 +19,7 @@ function Section({ children, className = "" }: { children: React.ReactNode; clas
   return <section className={`px-5 py-16 sm:py-24 ${className}`}><div className="mx-auto max-w-5xl">{children}</div></section>;
 }
 
-function Index() {
+export default function App() {
   return (
     <main className="min-h-screen overflow-x-hidden bg-background text-foreground">
       {/* HERO */}
